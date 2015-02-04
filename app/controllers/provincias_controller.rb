@@ -1,0 +1,2 @@
+class ProvinciasController < ApplicationController
+end
