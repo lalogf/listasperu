@@ -8,7 +8,7 @@ class DepartamentosController < ApplicationController
 
 		@departamentos.each do |dep|
 			provdis = []
-			provincia = Provincia.select(:id,:nombre).where(departamento_id: dep.id)
+			provincia = Provincia.select(:id,:nombre).where(departamento_id: dep.id).order(nombre: :asc)
 			
 			provincia.each do |el|
 
